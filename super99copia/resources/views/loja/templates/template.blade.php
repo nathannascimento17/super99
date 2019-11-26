@@ -45,6 +45,9 @@
           <li class="nav-item">
             <a class="nav-link" href="{{route('profile')}}">Acessar Perfil</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{route('profile')}}">Carrinho</a>
+          </li>
           @else
           <li class="nav-item">
             <a class="nav-link" href="{{url('login')}}">Entrar</a>

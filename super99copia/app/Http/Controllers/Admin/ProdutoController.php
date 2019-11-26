@@ -2,8 +2,9 @@
 
 namespace App\Http\Controllers\Admin;
 
-use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+
+use App\Http\Controllers\Controller;
 use App\Produto;
 
 class ProdutoController extends Controller
@@ -22,7 +23,7 @@ class ProdutoController extends Controller
     public function editar($id)
     {
         $registro = Produto::find($id);
-        if (empty($registro->id)) {
+        if( empty($registro->id) ) {
             return redirect()->route('admin.produtos');
         }
         return view('admin.produto.editar', compact('registro'));
